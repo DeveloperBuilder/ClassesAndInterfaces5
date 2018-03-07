@@ -17,28 +17,45 @@ namespace ClassesAndInterfaces5
         {
             Konijn knabbel = new Konijn();
             Konijn flappie = new Konijn();
+            Rabbit rabbit = new Rabbit();
 
+            rabbit.huppelen($"Het konijn {name} doet huppel huppel.");
             knabbel.huppelen();
             flappie.huppelen();
             Console.ReadLine();
         }
-        
+
     }
+
 }
 
-
-        
 namespace KinderBoerderij
 {
     class Konijn
     {
-        private int leeftijd;
+        private string leeftijd;
 
         public void huppelen()
         {
             Console.WriteLine("Huppel Huppel");
         }
     }
+
+    class Rabbit
+    {
+        public string age, name;
+
+        public Rabbit()
+        {
+
+        }
+
+        public void huppelen()
+        {
+            string name = "knabbel";
+        }
+    }
+
 }
 
 
