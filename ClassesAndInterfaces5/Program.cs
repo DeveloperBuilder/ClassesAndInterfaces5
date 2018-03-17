@@ -16,7 +16,7 @@ namespace ClassesAndInterfaces5
         static void Main(string[] args)
         {
             Rabbit rabbit = new Rabbit();
-            rabbit.Rabbit();
+            rabbit.DoRabbit();
             Console.ReadLine();
         }
 
@@ -42,7 +42,7 @@ namespace KinderBoerderij
         private string _naam = "knabbel";
         private string _naam2 = "flappie";
 
-        public void Rabbit()
+        public void DoRabbit()
         {
             Console.WriteLine($"{_naam} doet huppel huppel");
             Console.WriteLine($"{_naam2} doet huppel huppel");
