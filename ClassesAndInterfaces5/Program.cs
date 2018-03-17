@@ -15,13 +15,8 @@ namespace ClassesAndInterfaces5
 
         static void Main(string[] args)
         {
-            Konijn knabbel = new Konijn();
-            Konijn flappie = new Konijn();
             Rabbit rabbit = new Rabbit();
-
-            rabbit.huppelen($"Het konijn {name} doet huppel huppel.");
-            knabbel.huppelen();
-            flappie.huppelen();
+            rabbit.Rabbit();
             Console.ReadLine();
         }
 
@@ -43,19 +38,16 @@ namespace KinderBoerderij
 
     class Rabbit
     {
-        public string age, name;
+        private string age;
+        private string _naam = "knabbel";
+        private string _naam2 = "flappie";
 
-        public Rabbit()
+        public void Rabbit()
         {
-
-        }
-
-        public void huppelen()
-        {
-            string name = "knabbel";
+            Console.WriteLine($"{_naam} doet huppel huppel");
+            Console.WriteLine($"{_naam2} doet huppel huppel");
         }
     }
-
 }
 
 
